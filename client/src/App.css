@@ -1,0 +1,152 @@
+*{
+  box-sizing: border-box;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.logo{
+  color: #fff;
+  float: left;
+  display: inline-block;
+  font-size: 2.1rem;
+  padding: 0;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  font-size: calc(30px + 3vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/*----NAV + HEADER COMPONENT-----*/
+nav{
+  padding: 0 25px;
+}
+
+#header-text{
+  font-size: 1.5em;
+  animation: fadein ease-in;
+  animation-duration: 4s;
+}
+
+#header-text2{
+  margin-top: 0;
+  font-size: 3em;
+  color: #ba68c8;
+  animation-name: spin;
+            animation-duration: .25s;
+            animation-iteration-count: 6;
+}
+
+.header-container{
+  position: relative;
+  animation: myAnimation;
+  animation-duration: 2s;
+}
+
+.button-container{
+  margin-top: 25px;
+}
+
+.button{
+  width: 150px;
+  text-align: center;
+  animation: fadein ease-in;
+  animation-duration: 4s;
+}
+
+.button:nth-child(2){
+margin-left: 50px;
+}
+
+/*-------ADD PROJECT and FLASHCARD COMPONENT----------*/
+#project-submit{
+  margin-top: 20px;
+}
+
+#flashcard-submit{
+  margin-top: 15px;
+}
+
+.errorMessage{
+  color: red;
+}
+
+/*-----DISPLAY PROJECT DIV------*/
+.projectDiv{
+  width: 200px;
+  height: 200px;
+  background: red;
+  display: inline-block;
+  margin: 10px;
+  border-radius: 5px;
+  text-align: center;
+
+}
+
+.project-delete{
+  border-radius: 4px;
+  display: block;
+}
+
+.projectListTitle{
+  padding-top: 55px;
+  color: white;
+  font-size: 1.75em;
+}
+
+.study-button{
+  margin-top: 25px;
+}
+
+@keyframes myAnimation {
+  0% {
+      left: 500px;
+      top: -50px;
+  }
+
+  50% {
+    left: -100px;
+    top: 100px;
+  }
+
+  100% {
+      left: 0px;
+      top: 0px;
+  }
+}
+
+@keyframes spin {
+  100% {
+      transform: rotateY(180deg)
+  }
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
