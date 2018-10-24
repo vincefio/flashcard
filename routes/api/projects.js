@@ -2,10 +2,6 @@ const express = require('express')
 const router = express.Router()
 const Project = require('../../models/Project')
 
-router.get('/', (req, res) => {
-    res.send('hello world')
-});
-
 router.post('/db', (req, res) => {
     Project.create({ projectName: 'First Project' }, { projects: [{ front: 'test front' }, { back: 'test back' }] })
     res.end()
