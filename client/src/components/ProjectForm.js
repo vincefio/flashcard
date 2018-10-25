@@ -103,9 +103,11 @@ export default class ProjectForm extends Component {
 
     render() {
         let frontError = this.state.nameError
+        let cardError = this.state.projectError
         //let cardsAdded = this.state.currentCards.length
 
         const nameErrorOptions = <div className="errorMessage">{frontError}</div>
+        const cardErrorOptions = <div className="errorMessage">{cardError}</div>
 
         const { redirect } = this.state;
         if (redirect) {
@@ -118,6 +120,7 @@ export default class ProjectForm extends Component {
                 <h1>Add Project</h1>
                 <form onSubmit={this.handleSubmit}>
                     {nameErrorOptions}
+                    {cardErrorOptions}
                     <label>
                         Name:
                     <input onChange={this.handleChange} type="text" name="projectName" />
