@@ -104,12 +104,12 @@ export default class Flashcard extends Component {
 
                 <h4>Card {this.state.counter + 1}</h4>
                 <div className="flashcardDisplay row">
-                    <div className="flashcardFront col s6">
+                    <div className="flashcardFront col s12 m6">
                         {newGameDiv}
                         {newGameButton}
                         <h2>{cardDivFront}</h2>
                     </div>
-                    <div className="flashcardBack col s6">
+                    <div className="flashcardBack col s12 m6">
                         <h2 id="cardAnswer">{cardDivBackButton}</h2>
                     </div>
                     {nextButton}

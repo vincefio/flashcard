@@ -88,7 +88,7 @@ export default class Projects extends Component {
 
 
         return (
-            <div className='container'>
+            <div className='container center-align'>
                 {card}
                 <h1>Projects</h1>
                 {projectList}
