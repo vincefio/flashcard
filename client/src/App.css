@@ -32,11 +32,17 @@
 
 @media screen and (max-width: 480px) {
   .App-header {
-    font-size: 25px !important;
+    font-size: 20px !important;
   }
 
   .button:nth-child(2) {
     margin-left: 25px !important;
+}
+}
+
+@media screen and (max-width: 400px) {
+  .button:nth-child(2) {
+    margin-left: 10px !important;
 }
 }
 
