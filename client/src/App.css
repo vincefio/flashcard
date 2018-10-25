@@ -24,9 +24,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
   max-width: 100%;
   font-size: calc(30px + 3vmin);
   color: white;
+}
+
+@media screen and (max-width: 480px) {
+  .App-header {
+    font-size: 25px !important;
+  }
+
+  .button:nth-child(2) {
+    margin-left: 25px !important;
+}
 }
 
 .App-link {

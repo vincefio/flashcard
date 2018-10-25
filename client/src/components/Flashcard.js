@@ -48,6 +48,9 @@ export default class Flashcard extends Component {
     componentDidUpdate() {
         // console.log('update')
 
+        /*------BUG---------*/
+        /*WHEN ANOTHER STUDY BUTTON IS CLICKED, THE STATE AND PROPS UPDATE IN THIS COMPONENT,
+        BUT THE POST REQUEST IS NOT RESENT.  I WILL LOOK INTO NEW LIFECYCLE METHODS*/
     }
 
     answerClick = () => {
