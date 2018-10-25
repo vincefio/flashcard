@@ -9,12 +9,16 @@ export default class Flashcard extends Component {
             currentDoc: [],
             cards: [],
             counter: 0,
-            showAnswer: false
+            showAnswer: false,
+            id: ''
         }
+
+
     }
 
     componentWillMount() {
         //create a post request to get data from mongo
+        console.log('component did mount')
         axios.post('/displayCard', {
             id: this.props.id
         })
@@ -29,12 +33,21 @@ export default class Flashcard extends Component {
                 console.log(error);
             })
 
-        console.log('component will mount')
-        // console.log(this.state)
+
+        //console.log('component did mount')
+    }
+
+
+    componentWillReceiveProps(nextProps) {
+        //console.log('component recieve props')
+        //changes state of component when props update
+        this.setState({ id: nextProps.id });
+
     }
 
     componentDidUpdate() {
         // console.log('update')
+
     }
 
     answerClick = () => {

@@ -20,7 +20,7 @@ export default class Projects extends Component {
 
     componentDidMount() {
         // let results;
-        //console.log('component will mount')
+        //console.log('component did mount')
         axios.get('/projects')
             .then((response) => {
                 //console.log(response.data)
