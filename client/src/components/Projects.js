@@ -25,7 +25,7 @@ export default class Projects extends Component {
             .then((response) => {
                 //console.log(response.data)
                 let results = response.data
-
+                //console.log('project results ' + JSON.stringify(results))
                 //set state to database results
                 this.setState({
                     projectResults: results
